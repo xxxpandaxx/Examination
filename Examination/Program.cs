@@ -15,14 +15,20 @@ void UserNumber(int[] array)
 }
 void EvenNumbers(int[] array)
 {
+int count = 0;
  for (int i = 0; i < array.Length;i++)
  {
+     
      if ( array[i]%2 == 0 )
      {
         Console.Write(array[i] +" ");
+        count++;
      }
  }
-
+    if (count == 0)
+    {
+        Console.WriteLine("There is no even numbers");
+    }
 }
 
 PrintArr(arr);
