@@ -6,3 +6,10 @@ void PrintArr(int[] array)
     Console.Write(array[i] + " ");
     }
 }
+void UserNumber(int[] array)
+{
+    for (int i = 0; i < array.Length;i++)
+    {
+        array[i] = Convert.ToInt32(Console.ReadLine() + " ");
+    }
+}
